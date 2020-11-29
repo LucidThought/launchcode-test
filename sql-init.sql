@@ -1,0 +1,53 @@
+CREATE TABLE quotes(
+	id serial PRIMARY KEY,
+	departure_location varchar(50) NOT NULL,
+	destination_location varchar(50) NOT NULL,
+	depart_date timestamp with time zone NOT NULL,
+	return_date timestamp with time zone NOT NULL,
+	number_travellers int4 NOT NULL,
+	transportation varchar(400),
+	contact varchar(100) NOT NULL,
+	name varchar(80) NOT NULL,
+	price int4 NOT NULL,
+	created_at timestamp with time zone NOT NULL DEFAULT now()
+	);
+	
+INSERT INTO quotes(
+	departure_location,
+	destination_location,
+	depart_date,
+	return_date,
+	number_travellers,
+	transportation,
+	contact,
+	name,
+	price)
+VALUES 
+	('Calgary International',
+	'Vancouver International',
+	(SELECT to_timestamp('18/12/2020', 'DD/MM/YYYY')),
+	(SELECT to_timestamp('19/01/2021', 'DD/MM/YYYY')),
+	12,
+	'["Rental Car"]',
+	'Phone:403-555-4817',
+	'Steve Rogers',
+	2845),
+	('Calgary International',
+	'Vancouver International',
+	(SELECT to_timestamp('05/01/2021', 'DD/MM/YYYY')),
+	(SELECT to_timestamp('22/01/2021', 'DD/MM/YYYY')),
+	12,
+	'["Speeder Bike"]',
+	'Phone:403-555-4817',
+	'Jimmy Gibbs Jr.',
+	6980),
+	('Calgary International',
+	'Vancouver International',
+	(SELECT to_timestamp('26/01/2021', 'DD/MM/YYYY')),
+	(SELECT to_timestamp('12/02/2021', 'DD/MM/YYYY')),
+	12,
+	'["Molecular Transport Rings"]',
+	'Phone:403-555-4817',
+	'Stacie Lib',
+	3500)
+	
