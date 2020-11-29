@@ -1,0 +1,38 @@
+.body-section {
+  display: flex;
+  align-items: center;
+  padding: 0px 0px 0px 0px;
+  max-width: 100%;
+  width: 100%;
+  flex-direction: column;
+  font-weight: lighter;
+  height: 100%;
+
+  .row-buffer {
+    margin-bottom: 30px;
+  }
+}
+
+a {
+  font-weight: bold;
+  color: #000000;
+
+  &:hover {
+    text-decoration: underline;
+    color: #000000;
+    font-weight: bolder;
+  }
+}
+
+.m-title {
+  font-size: 24px;
+}
+
+.l-title {
+  font-size: 48px;
+}
+
+.xl-title {
+  font-size: 74px;
+  font-weight: bolder;
+}

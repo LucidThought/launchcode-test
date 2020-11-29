@@ -1,36 +1,7 @@
-.body-section {
-  display: flex;
-  align-items: center;
-  padding: 180px 0px 120px 0px;
-  max-width: 100%;
-  flex-direction: column;
-  font-weight: lighter;
-
-  .row-buffer {
-    margin-bottom: 30px;
-  }
+.left-menu {
+  background-color: #e6e6e6;
 }
 
-a {
-  font-weight: bold;
-  color: #000000;
-
-  &:hover {
-    text-decoration: underline;
-    color: #000000;
-    font-weight: bolder;
-  }
-}
-
-.m-title {
-  font-size: 24px;
-}
-
-.l-title {
-  font-size: 48px;
-}
-
-.xl-title {
-  font-size: 74px;
-  font-weight: bolder;
+.page-content {
+  background-color: #edf0f9;
 }
