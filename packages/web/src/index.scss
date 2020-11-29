@@ -1,0 +1,41 @@
+html {
+  height: 100%;
+  width: 100% !important;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+body {
+  height: 100%;
+  width: 100% !important;
+  overflow: auto;
+  padding: 0 !important;
+  margin: 0 !important;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  color: #000000;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.no-border {
+  margin: 0px !important;
+  max-width: 100% !important;
+  padding: 0px !important;
+}
+
+.no-margin-left-right {
+  margin-left: 0px !important;
+  margin-right: 0px !important;
+  width: 100%;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
