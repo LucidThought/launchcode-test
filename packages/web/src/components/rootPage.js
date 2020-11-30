@@ -1,5 +1,6 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
+import QuoteTable from "./quotes/quoteTable";
 
 import "./rootPage.scss";
 
@@ -15,7 +16,9 @@ const RootPage = () => {
           </Row>
           <Row></Row>
         </Col>
-        <Col xs={11}>Content Component</Col>
+        <Col xs={11}>
+          <QuoteTable />
+        </Col>
       </Row>
     </Container>
   );

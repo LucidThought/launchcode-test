@@ -2,6 +2,14 @@ const express = require("express");
 
 const app = express();
 
+// This 'use' allows the web app being run on
+// localhost to access resources from the back
+// end on localhost
+app.use((req, res, next) => {
+  res.header("Access-Control-Allow-Origin", "*");
+  next();
+});
+
 app.get("/", (req, res) => {
   res.json({ message: "Hello World!" });
 });
