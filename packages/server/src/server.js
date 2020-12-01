@@ -10,10 +10,6 @@ app.use((req, res, next) => {
   next();
 });
 
-app.get("/", (req, res) => {
-  res.json({ message: "Hello World!" });
-});
-
 app.get("/quotes", async (req, res) => {
   const list = await require("./quotes/QuoteController").getQuotes();
   res.json(list);
